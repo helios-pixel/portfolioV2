@@ -2,6 +2,10 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Technologies from "./components/Technologies"
+import Experience from "./components/Experience"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Academics from "./components/Academics"
 
 export default function App() {
   return (
@@ -16,7 +20,11 @@ export default function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <About></About>
+      <Academics></Academics>
       <Technologies></Technologies>
+      <Experience></Experience>
+      <Projects></Projects>
+      <Contact></Contact>
       
       </div>
       

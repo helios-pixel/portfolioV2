@@ -1,7 +1,13 @@
+
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+
+import kpsp from "../assets/academics/kpsp.jpg";
+import mmm from "../assets/academics/mmm.jpg";
+import pvpit from "../assets/academics/pvpit.jpg";
+
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -36,6 +42,31 @@ export const EXPERIENCES = [
     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
   },
+];
+
+export const ACADEMICS = [
+  {
+    year: "2020 - 2024",
+    college: "Padmabhooshan Vasantraodada Patil Institute of Technology, Budhgaon",
+    course: "Bachelor of Technology in Computer Science and Engineering",
+    logo: pvpit,
+    grade: "7.5+ CGPA"
+  },
+  {
+    year: "2020",
+    college: "Miraj Mahavidhyalaya, Miraj",
+    course: "HSC, 12th",
+    logo: mmm,
+    grade: "78.46%"
+  },
+  {
+    year: "2018",
+    college: "Shri Kantilal Purshottamdas Shah Prashala, Vishrambaugh, Sangli",
+    course: "SSC, 10th",
+    logo: kpsp,
+    grade: "85.80%"
+  }
+
 ];
 
 export const PROJECTS = [
