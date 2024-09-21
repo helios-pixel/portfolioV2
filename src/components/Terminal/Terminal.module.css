@@ -1,0 +1,103 @@
+.terminal-container {
+    width: 100% !important;
+    background-color: #1E1E1E;
+    height: 32rem;
+    border-radius: 11px;
+    box-shadow: 7px 9px 33px -7px rgba(0, 0, 0, 0.81);
+    color: #8E8F90;
+}
+
+.terminal-toolbar {
+    height: 2rem;
+    background-color: #3E3F41;
+    border-radius: 11px 11px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 0 1rem;
+    flex-wrap: wrap; /* Wrap the content if it overflows */
+}
+
+.terminal-tools {
+    display: flex;
+    gap: 5px;
+}
+
+.red-circle, .green-circle, .yellow-circle {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red-circle {
+    background-color: #EE504A;
+}
+
+.green-circle {
+    background-color: #F8BD45;
+}
+
+.yellow-circle {
+    background-color: #5ECB43;
+}
+
+.terminal-name {
+    flex-grow: 1; /* Allow the name to take up remaining space */
+    text-align: center; /* Center the name */
+    font-size: 1rem;
+    color: #8E8F90;
+}
+.terminal-classTerm{
+    margin-left: 8px;
+}
+
+.terminal-placeholder {
+    margin-right: 1rem;
+}
+
+.terminal-search {
+    margin-left: 1rem;
+}
+
+.terminal-search input {
+    background-color: #1E1E1E;
+    border: 0;
+    width: 80%;
+    color: rgb(212, 211, 211);
+}
+
+.terminal-search input:focus {
+    outline: none;
+}
+
+.terminal-search input::placeholder {
+    font-size: 15px;
+}
+.terminal-cmdHistory{
+    margin-left: 8px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .terminal-container {
+        width: 95%;
+        height: 24rem; /* Adjust height to content */
+    }
+
+    .terminal-toolbar {
+        height: auto; /* Allow it to grow as needed */
+        padding: 0.5rem; /* Add padding for smaller screens */
+        flex-direction: row; /* Stack toolbar elements vertically */
+        align-items: center;
+    }
+
+    .terminal-name {
+        font-size: 0.85rem; /* Adjust font size for smaller screens */
+    }
+
+    .red-circle, .green-circle, .yellow-circle {
+        height: 8px;
+        width: 8px;
+    }
+}

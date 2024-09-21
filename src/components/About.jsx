@@ -1,11 +1,12 @@
 import aboutImg from '../assets/about.jpg'
 import { ABOUT_TEXT } from '../constants'
 import { motion } from 'framer-motion'
+import React, { forwardRef } from 'react';
 
 function About(){
     return(
         <>
-        <div className="border-b border-neutral-900 pb-4">
+        <div id='about' className="border-b border-neutral-900 pb-4">
             <h1 className="my-20 text-center text-4xl">
                 About 
                 <span className="text-neutral-500">

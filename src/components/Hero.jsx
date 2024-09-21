@@ -1,7 +1,6 @@
 import {HERO_CONTENT} from '../constants'
-import profilePic from '../assets/kevinRushProfile.png'
 import {motion} from 'framer-motion'
-
+import Terminal from './Terminal/Terminal'
 const container = (delay) =>({
     hidden: {opacity:0, x:-100},
     visible: {
@@ -32,17 +31,30 @@ function Hero(){
                         initial="hidden"
                         animate="visible"
                          className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
+                         <motion.p
+                        variants={container(1)}
+                        initial="hidden"
+                        animate="visible"
+                        className="my-2 max-w-xl py-6 font-light tracking-tighter">Show Off your terminal skills to navigate the portfolio 
+                            <span className="bg-gray-800 text-white font-mono px-1 py-0 rounded ">ls to list directories</span>, <br></br>
+                             
+                            <span className="bg-gray-800 text-white font-mono px-1 py-0 rounded ">cd to go to the section  </span>,
+                            
+                            <span className="bg-gray-800 text-white font-mono px-1 py-0 rounded ">clear to well... clear </span> 
+                            
+                        </motion.p>
+                          
                     </div>
                 </div>
                 <div className='w-full lg:w-1/2 p-8'>
-                    <div className='flex justify-center'>
-                        <motion.img 
-                        initial={{x:100, opacity:0, }}
-                        animate={{x:0, opacity:1, }}
-                        transition={{duration:1, delay:1.2 }}
-
-                        src={profilePic} alt="" />
-                    </div>
+                    <motion.div 
+                    initial={{x:100, opacity:0, }}
+                    animate={{x:0, opacity:1, }}
+                    transition={{duration:1, delay:1.2 }}
+                    className='flex justify-center'>
+                        
+                        <Terminal></Terminal>
+                    </motion.div>
                 </div>
             </div>
         </div>

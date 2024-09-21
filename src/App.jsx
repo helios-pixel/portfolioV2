@@ -21,8 +21,9 @@ export default function App() {
       <Hero></Hero>
       <About></About>
       <Academics></Academics>
-      <Technologies></Technologies>
       <Experience></Experience>
+
+      <Technologies></Technologies>
       <Projects></Projects>
       <Contact></Contact>
       
