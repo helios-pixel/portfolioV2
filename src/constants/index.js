@@ -37,7 +37,7 @@ export const ACADEMICS = [
     college: "Padmabhooshan Vasantraodada Patil Institute of Technology, Budhgaon",
     course: "Bachelor of Technology in Computer Science and Engineering",
     logo: pvpit,
-    grade: "7.5+ CGPA"
+    grade: "7.91 CGPA"
   },
   {
     year: "2020",
