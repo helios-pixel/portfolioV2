@@ -6,6 +6,9 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 function Navbar() {
     const [isOpen, setOpen] = useState(false); // State for toggling the menu
 
+    // Function to close the menu
+    const closeMenu = () => setOpen(false);
+
     return (
         <nav className="relative z-50 mb-10 flex items-center justify-between py-6 px-4 lg:px-8 bg-transparent">
             {/* Logo */}
@@ -25,22 +28,46 @@ function Navbar() {
                 } bg-black bg-opacity-90 lg:translate-x-0 lg:h-auto lg:w-auto`}
             >
                 <div className="flex flex-col lg:flex-row lg:justify-center lg:gap-6 text-right lg:text-center">
-                    <a href="#about" className="block mt-24 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-300">
+                    <a
+                        href="#about"
+                        className="block mt-24 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-300"
+                        onClick={closeMenu} // Close the menu when link is clicked
+                    >
                         About
                     </a>
-                    <a href="#academics" className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-300">
+                    <a
+                        href="#academics"
+                        className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-300"
+                        onClick={closeMenu}
+                    >
                         Academics
                     </a>
-                    <a href="#experience" className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-400">
+                    <a
+                        href="#experience"
+                        className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-400"
+                        onClick={closeMenu}
+                    >
                         Experience
                     </a>
-                    <a href="#skills" className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-300">
+                    <a
+                        href="#skills"
+                        className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-300"
+                        onClick={closeMenu}
+                    >
                         Skills
                     </a>
-                    <a href="#projects" className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-400">
+                    <a
+                        href="#projects"
+                        className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-400"
+                        onClick={closeMenu}
+                    >
                         Projects
                     </a>
-                    <a href="#contact" className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-400">
+                    <a
+                        href="#contact"
+                        className="block mt-6 mr-12 lg:mt-0 lg:inline-block text-white hover:text-blue-400"
+                        onClick={closeMenu}
+                    >
                         Contact
                     </a>
                 </div>
