@@ -1,6 +1,10 @@
 import {HERO_CONTENT} from '../constants'
 import {motion} from 'framer-motion'
 import Terminal from './Terminal/Terminal'
+import {useState , useEffect} from 'react'
+
+
+
 const container = (delay) =>({
     hidden: {opacity:0, x:-100},
     visible: {
@@ -10,6 +14,44 @@ const container = (delay) =>({
     }
 })
 function Hero(){
+
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const toRotate = ["Full Stack Developer", "UI/UX Designer"];
+    const [delta, setDelta] = useState(300-Math.random()*100); 
+    const [text, setText]= useState('');
+    const period =2000;
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+    
+        return () => clearInterval(ticker);
+    }, [text, delta, loopNum, isDeleting]);
+    
+
+    const tick = () => {
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+        setText(updatedText);
+
+        if(isDeleting){
+            setDelta(prevDelta => prevDelta /2)
+        }
+        if(!isDeleting && updatedText===fullText){
+            setIsDeleting(true);
+            setDelta(period);
+        } else if(isDeleting && updatedText === ''){
+            setIsDeleting(false);
+            setLoopNum(loopNum+1);
+            setDelta(500);
+        }
+    }
+
+
     return(
         <>
         <div className="border-b border-neutral-900 pb-4 my-32 lg:mb-35">
@@ -25,7 +67,7 @@ function Hero(){
                         variants={container(0.75)}
                         initial="hidden"
                         animate="visible"
-                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Full Stack Developer</motion.span>
+                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">{text}|</motion.span>
                         <motion.p
                         variants={container(1)}
                         initial="hidden"
