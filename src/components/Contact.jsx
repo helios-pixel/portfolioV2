@@ -9,7 +9,7 @@ function Contact(){
                     <p className="my-4">{CONTACT.email}</p>
                     <p className="my-4"><a href="https://www.linkedin.com/in/pravintiwade" target="_blank" className="border-b">LinkedIn</a> </p>
                     <p className="my-4"><a href="https://github.com/helios-pixel" target="_blank" className="border-b">GitHub</a></p>
-                    <p className="my-4">Discord: @oreowithwings</p>
+                    
 
                 </div>
             </div>

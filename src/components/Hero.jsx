@@ -82,7 +82,9 @@ function Hero(){
                              
                             <span className="bg-gray-800 text-white font-mono px-1 py-0 rounded ">cd to go to the section  </span>,
                             
-                            <span className="bg-gray-800 text-white font-mono px-1 py-0 rounded ">clear to well... clear </span> 
+                            <span className="bg-gray-800 text-white font-mono px-1 py-0 rounded ">clear to well... clear </span> ,
+                            <br /><span className="bg-gray-800 text-red-600 font-mono px-1 py-0 rounded ">DO NOT type in "sudo -rm rf" <br /> <span className='text-gray-400'>well we both know you wanna do it now ;)</span></span> 
+                            
                             
                         </motion.p>
                           
