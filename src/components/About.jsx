@@ -32,7 +32,7 @@ function About(){
                     <div className='flex flex-col justify-center lg:justify-start'>
                         <p className='my-2 max-w-xl  py-6'>{ABOUT_TEXT}</p>
                         <br />
-                        <a href="https://drive.google.com/file/d/1Qh4tlPR2gjx_Jpn6NKd6ivHUlNRribcW/view?usp=sharing" target='_blank'>
+                        <a href="https://drive.google.com/file/d/1TiZonW-aL095uWE7qInxIHuf5CwjoYGZ/view?usp=drivesdk" target='_blank'>
                         <button className="relative h-12 w-32 flex items-center justify-center gap-2 overflow-hidden rounded-md border border-indigo-600 bg-transparent text-indigo-600 shadow-2xl transition-all duration-200 ease-out before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-md before:bg-indigo-600 before:duration-300 before:transition-all before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-full hover:before:w-full hover:before:opacity-80">
                             <span className="relative z-10 flex items-center justify-center">
                                 <IoDocumentTextOutline className="mr-1 text-lg" /> Resume
@@ -48,5 +48,6 @@ function About(){
         </>
     )
 }
+
 
 export default About
