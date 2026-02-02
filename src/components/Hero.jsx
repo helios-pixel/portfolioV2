@@ -17,7 +17,7 @@ function Hero(){
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Full Stack Developer", "UI/UX Designer"];
+    const toRotate = ["LLM operations", "AI Prompt quality specialist", "Developer", "UI/UX Designer"];
     const [delta, setDelta] = useState(300-Math.random()*100); 
     const [text, setText]= useState('');
     const period =2000;
@@ -105,5 +105,6 @@ function Hero(){
         </>
     );
 }
+
 
 export default Hero
