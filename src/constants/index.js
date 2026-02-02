@@ -11,11 +11,19 @@ import mmm from "../assets/academics/mmm.jpg";
 import pvpit from "../assets/academics/pvpit.jpg";
 
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With a year of hands-on experience in freelance development, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Django, MySQL, PostgreSQL, etc. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `Computer Science graduate working at the intersection of AI quality, prompt engineering, and development - focused on building reliable, production-ready systems that actually work in the real world.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, Django. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies and bug hunting.`;
+export const ABOUT_TEXT = `I’m a Computer Science graduate currently working as a Junior Associate Executive – Prompt Engineering at ZENSAR Technologies while being vendored to NVIDIA. My work revolves around evaluating, refining, and improving AI systems at scale, where accuracy, reliability, and clear communication matter just as much as code.
+I’ve handled 8,000+ multimodal AI tasks spanning image understanding, spatial reasoning, and VQA, while maintaining 98%+ quality accuracy under strict SLAs. Beyond validation, I actively investigate failure patterns, perform root-cause analysis, and provide actionable feedback to engineering teams to improve model behavior before production deployment.
+Alongside AI quality and prompt engineering, I enjoy building real products.`;
 
 export const EXPERIENCES = [
+  {
+    year: "October 2024 - Present",
+    role: "Junior associate, AI prompt analyst and QA",
+    company: "Zensar Technologies",
+    
+  },
   {
     year: "Feb 2023 - March 2024",
     role: "Software Developer and Designer",
@@ -37,7 +45,7 @@ export const ACADEMICS = [
     college: "Padmabhooshan Vasantraodada Patil Institute of Technology, Budhgaon",
     course: "Bachelor of Technology in Computer Science and Engineering",
     logo: pvpit,
-    grade: "7.91 CGPA"
+    grade: "8.23 CGPA"
   },
   {
     year: "2020",
